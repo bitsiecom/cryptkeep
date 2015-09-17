@@ -45,52 +45,54 @@
 
 			<div id="main" class="container">
 
-<div class="hidden-sm hidden-xs col-md-2"><img src="/img/lock.png" class="img-responsive" alt="" /></div>
-<div class="col-md-10">
-				<div class="intro">
-					<p>Type or paste some text in the text area below, along with a password used to encrypt the message. Then simply share the link you are provided to another person, and have them type in the password to decrypt the message. We recommend communicating the password in a secure manner, such as in-person or non-electronically.</p>
-
-					<p>No information is ever communicated back to or stored on our servers. Still unsure? Check out the <a href="http://www.github.com/bitsiecom/cryptkeep">source code</a> and run your own copy!</p>
+				<div class="hidden-sm hidden-xs col-md-2">
+					<img src="/img/lock.png" class="img-responsive" alt="" />
 				</div>
+				<div class="col-md-10">
+					<div class="intro">
+						<p>Type or paste some text in the text area below, along with a password used to encrypt the message. Then simply share the link you are provided to another person, and have them type in the password to decrypt the message. We recommend communicating the password in a secure manner, such as in-person or non-electronically.</p>
 
-				<div class="clearfix"></div>
+						<p>No information is ever communicated back to or stored on our servers. Still unsure? Check out the <a href="http://www.github.com/bitsiecom/cryptkeep">source code</a> and run your own copy!</p>
+					</div>
 
-				<form ng-show="encrypt" class="form">
-					<div class="form-group">
-						<label>Your message:</label>
-						<textarea ng-model="enc_message" rows="4" class="form-control"></textarea>
-					</div>
-					<div class="form-group">
-						<label>Password:</label>
-						<input ng-model="enc_password" type="password" class="form-control" />
-					</div>
-					<div class="form-group well well-success" ng-show="enc_result">
-						<label>Encrypted message:</label>
-						<textarea ng-model="enc_result" readonly rows="4" class="form-control"></textarea>
-					</div>
-					<div class="form-group">
-						<button ng-click="encrypt()" class="btn btn-success">Encrypt Message</button>
-					</div>
-				</form>
+					<div class="clearfix"></div>
 
-				<form ng-show="!encrypt" class="form">
-					<div class="form-group">
-						<label>Encrypted message:</label>
-						<textarea ng-model="dec_message" rows="4" class="form-control"></textarea>
-					</div>
-					<div class="form-group">
-						<label>Password:</label>
-						<input ng-model="dec_password" type="password" class="form-control" />
-					</div>
-					<div class="form-group well well-success" ng-show="dec_result">
-						<label>Decrypted message:</label>
-						<textarea ng-model="dec_result" readonly rows="4" class="form-control"></textarea>
-					</div>
-					<div class="form-group">
-						<button ng-click="decrypt()" class="btn btn-success">Decrypt Message</button>
-					</div>
-				</form>
-</div>
+					<form ng-show="encrypt" class="form">
+						<div class="form-group">
+							<label>Your message:</label>
+							<textarea ng-model="enc_message" rows="4" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<label>Password:</label>
+							<input ng-model="enc_password" type="password" class="form-control" />
+						</div>
+						<div class="form-group well well-success" ng-show="enc_result">
+							<label>Encrypted message:</label>
+							<textarea ng-model="enc_result" readonly rows="4" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<button ng-click="encrypt()" class="btn btn-success">Encrypt Message</button>
+						</div>
+					</form>
+
+					<form ng-show="!encrypt" class="form">
+						<div class="form-group">
+							<label>Encrypted message:</label>
+							<textarea ng-model="dec_message" rows="4" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<label>Password:</label>
+							<input ng-model="dec_password" type="password" class="form-control" />
+						</div>
+						<div class="form-group well well-success" ng-show="dec_result">
+							<label>Decrypted message:</label>
+							<textarea ng-model="dec_result" readonly rows="4" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<button ng-click="decrypt()" class="btn btn-success">Decrypt Message</button>
+						</div>
+					</form>
+				</div>
 			</div><!-- /.container -->
 
 			<div class="container">
