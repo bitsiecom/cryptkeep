@@ -1,0 +1,28 @@
+body {
+	padding-top: 80px;
+}
+
+.navbar {
+	background: #F48200;
+	color:#fff;
+}
+
+.navbar-inverse .navbar-brand {
+	color:#fff;
+}
+
+.navbar .nav li a {
+	color:#fff;
+}
+
+.navbar .nav li a:hover {
+	color:#efefef;
+}
+
+#main {
+	line-height:1.8em;
+}
+
+.well-success {
+	background:#eb9316;
+}
